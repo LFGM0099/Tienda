@@ -14,7 +14,7 @@ namespace Manejador
         Funciones f = new Funciones();
         public void Guardar(TextBox Nombre, TextBox Descripcion, TextBox Precio)
         {
-            MessageBox.Show(f.Guardar($"call p_GuardarProducto('{Nombre.Text}', '{Descripcion.Text}', '{Precio.Text}'))"),
+            MessageBox.Show(f.Guardar($"call p_GuardarProducto('{Nombre.Text}', '{Descripcion.Text}', '{Precio.Text}')"),
                 "!ATENCION!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -29,7 +29,7 @@ namespace Manejador
         }
         public void Modificar(int id_producto, TextBox Nombre, TextBox Descripcion, TextBox Precio)
         {
-            MessageBox.Show(f.Modificar($"call p_ModificarProducto({id_producto}, '{Nombre.Text}', '{Descripcion.Text}', '{Precio.Text}'))"),
+            MessageBox.Show(f.Modificar($"call p_ModificarProducto({id_producto}, '{Nombre.Text}', '{Descripcion.Text}', '{Precio.Text}')"),
                 "!ATENCION!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -44,12 +44,12 @@ namespace Manejador
             return b;
         }
 
-        public void MostrarUsuarios(DataGridView Tabla, string filtro)
+        public void MostrarProducto(DataGridView Tabla, string filtro)
         {
             Tabla.Columns.Clear();
             Tabla.DataSource = f.Mostrar($"select * from v_Productos where nombre like '%{filtro}%'", "usuarios").Tables[0];
-            Tabla.Columns.Insert(5, Boton("Borrar", Color.Red));
-            Tabla.Columns.Insert(6, Boton("Editar", Color.Green));
+            Tabla.Columns.Insert(4, Boton("Borrar", Color.Red));
+            Tabla.Columns.Insert(5, Boton("Editar", Color.Green));
             Tabla.AutoResizeColumns();
             Tabla.AutoResizeRows();
         }
