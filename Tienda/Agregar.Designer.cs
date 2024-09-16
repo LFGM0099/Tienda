@@ -37,10 +37,10 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgvTabla = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvTabla)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -130,15 +130,15 @@
             this.txtPrecio.Size = new System.Drawing.Size(358, 54);
             this.txtPrecio.TabIndex = 8;
             // 
-            // dataGridView1
+            // dtgvTabla
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(652, 92);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(693, 458);
-            this.dataGridView1.TabIndex = 9;
+            this.dtgvTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvTabla.Location = new System.Drawing.Point(652, 92);
+            this.dtgvTabla.Name = "dtgvTabla";
+            this.dtgvTabla.RowHeadersWidth = 51;
+            this.dtgvTabla.RowTemplate.Height = 24;
+            this.dtgvTabla.Size = new System.Drawing.Size(693, 458);
+            this.dtgvTabla.TabIndex = 9;
             // 
             // textBox1
             // 
@@ -165,7 +165,7 @@
             this.ClientSize = new System.Drawing.Size(1357, 582);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgvTabla);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtNombre);
@@ -179,7 +179,7 @@
             this.Margin = new System.Windows.Forms.Padding(8);
             this.Name = "Agregar";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvTabla)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,7 +196,7 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.TextBox txtPrecio;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgvTabla;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
     }

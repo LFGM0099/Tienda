@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tienda", "Tienda\Tienda.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccesoDatos", "AccesoDatos\AccesoDatos.csproj", "{E1EF8E75-499C-45BA-ACED-9ABECCE6ED55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manejador", "Manejador\Manejador.csproj", "{031E76CD-1177-4213-B71C-5D9C2F20F9CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E1EF8E75-499C-45BA-ACED-9ABECCE6ED55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1EF8E75-499C-45BA-ACED-9ABECCE6ED55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1EF8E75-499C-45BA-ACED-9ABECCE6ED55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{031E76CD-1177-4213-B71C-5D9C2F20F9CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{031E76CD-1177-4213-B71C-5D9C2F20F9CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{031E76CD-1177-4213-B71C-5D9C2F20F9CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{031E76CD-1177-4213-B71C-5D9C2F20F9CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
